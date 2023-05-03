@@ -396,4 +396,5 @@ header {
 
 .about-text{
     text-align: justify;
+    font-size: var(--normal-font-size);
 }
