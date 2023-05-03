@@ -344,10 +344,10 @@ header {
 .main-text p {
     font-size: var(--h3-font-size);
     color: var(--light-text-color);
+    margin-bottom: 4rem;
 }
 
 .btn {
-    margin-top: 4rem;
     padding: .4rem 1.25rem;
     background: transparent;
     color: #fff;
