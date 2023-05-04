@@ -6,26 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <!--==================== BOX ICONS ====================-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+
     <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
     <title>NTBS, Thapathali Campus</title>
 </head>
 
 <body>
     <!--==================== HEADER ====================-->
-    <header id="header" class="header">
+    <header id="header" class="header wow fadeInDown">
         <navbar class="navbar">
             <div id="logoimg">
-                <a href="#"><img src="logo.svg" alt="NTBS" </a>
+                <a href="#"><img src="assets/img/logo.svg" alt="NTBS" </a>
             </div>
             <div class="nav-list">
                 <ul>
@@ -46,8 +51,7 @@
                     </li>
                 </ul>
             </div>
-            <!-- <div class="uil uil-bars" id="menu-btn">
-            </div> -->
+
             <div class="menu" id="menu-btn">
                 <div>
                     <span class="line-1"></span>
@@ -68,12 +72,13 @@
         <section class="home section" id="home">
 
             <div class="main-text">
-                <h1>Connecting Students of Terai</h1>
-                <h2>Through Culture and Celebration</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quasi ipsa labore excepturi, saepe quos
+                <h1 class="wow fadeInUp">Connecting Students of Terai</h1>
+                <h2 class="wow fadeInUp" data-wow-delay="1s">Through Culture and Celebration</h2>
+                <p class="wow fadeInUp" data-wow-delay="1.5s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quasi ipsa labore
+                    excepturi, saepe quos
                     ratione beatae minus, velit fugit optio vero et eveniet voluptate aut repudiandae iusto! Nam,
                     eligendi!</p>
-                <a href="#about">
+                <a href="#about" class="wow fadeInUp" data-wow-delay="2s">
                     <button class="btn">Know More</button>
                 </a>
             </div>
@@ -81,31 +86,45 @@
 
         <section class="about section" id="about">
             <div class="container">
-                <h1 class="section-heading">About NTBS</h1>
-                    <hr><br>
-                    <div class="about-div grid">
-                        <img src="about.jpg" alt="About" class="about-img">
-                        <p class="about-text">
-                            Nepal Terai Bidhyarthi Sangh (NTBS) is a non-political
-                            organization in Thapathali Engineering Campus which was
-                            established in 2056 B.S. It is formed in order to initiate mutual
-                            relation among students from Terai which includes the primeval
-                            citizens i.e. Madhesis, who have been living in the southern
-                            plains of Nepal whose mother tongue is any among Maithili,
-                            Bhojpuri, Bajjika, Urdu, Tharu, Awadhi, Marwadi, Jhangad, and
-                            Santhal. We've been engaged in different technical sector as
-                            well as extra curriculum activities till date. We have a great
-                            prestige and recognition in social aspects. NTBS has raised itself
-                            as a successful organization by involving the students of the
-                            entire campus in different activities and also outside the campus
-                            on educational, social and cultural issues.
-                        </p>
-                    </div>
+                <h1 class="section-heading wow fadeInDown" data-aos="fade-down">About NTBS</h1>
+                <hr class="wow fadeInDown"><br>
+                <div class="about-div grid">
+                    <img src="assets/img/about.jpg" alt="About" class="about-img wow slideInUp" data-wow-duration="1.5">
+                    <p class="about-text wow fadeInRight" data-wow-duration="1.5s" data-aos="fade-left">
+                        Nepal Terai Bidhyarthi Sangh (NTBS) is a non-political
+                        organization in Thapathali Engineering Campus which was
+                        established in 2056 B.S. It is formed in order to initiate mutual
+                        relation among students from Terai which includes the primeval
+                        citizens i.e. Madhesis, who have been living in the southern
+                        plains of Nepal whose mother tongue is any among Maithili,
+                        Bhojpuri, Bajjika, Urdu, Tharu, Awadhi, Marwadi, Jhangad, and
+                        Santhal. We've been engaged in different technical sector as
+                        well as extra curriculum activities till date. We have a great
+                        prestige and recognition in social aspects. NTBS has raised itself
+                        as a successful organization by involving the students of the
+                        entire campus in different activities and also outside the campus
+                        on educational, social and cultural issues.
+                    </p>
+                </div>
             </div>
-                
+
         </section>
+
+        <!--==================== AOS JS ====================-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 100,
+                duration: 1200
+            });
+        </script>
+        <script>
+            new WOW().init();
+        </script>
         <!--==================== MAIN JS ====================-->
-        <script src="main.js"></script>
+        <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
