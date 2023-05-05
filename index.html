@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <div id="preloader"></div>
     <!--==================== HEADER ====================-->
     <header id="header" class="header">
         <navbar class="navbar">
@@ -106,6 +107,12 @@
         </section>
         <!--==================== MAIN JS ====================-->
         <script src="main.js"></script>
+        <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
 </body>
 
 </html>
